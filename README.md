@@ -1,24 +1,25 @@
-# README
+# VetSystem
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Introdução
 
-Things you may want to cover:
+O Vetsystem é um sistema de cadastro para veterinários. 
 
-* Ruby version
+Ao se autenticar e acessar o sistema, o veterinário poderá cadastrar informações sobre o cliente e vincular o animal ao cliente e atualizar o estado de saúde, assim podendo manter um histórico atualizado sobre o animal em questão.
 
-* System dependencies
+### Conteúdo
 
-* Configuration
+O Sistema terá:
 
-* Database creation
+* Modo de Autenticação
+* Table Cliente
+* Table Animal
+* Table Status
 
-* Database initialization
+### Estrutura Técnica
 
-* How to run the test suite
+Para isso usaremos:
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+| Quantidade 	| Generate 	 |
+| ------------- |:----------:|
+| **1**		    | Devise	 |
+| **3**		    | Scaffold   | 
