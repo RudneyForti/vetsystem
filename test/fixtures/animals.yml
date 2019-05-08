@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  cliente: one
+  especie: MyString
+  raca: MyString
+  nascimento: 2019-05-08
+
+two:
+  nome: MyString
+  cliente: two
+  especie: MyString
+  raca: MyString
+  nascimento: 2019-05-08
