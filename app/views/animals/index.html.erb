@@ -22,9 +22,9 @@
         <td><%= animal.especie %></td>
         <td><%= animal.raca %></td>
         <td><%= animal.nascimento %></td>
-        <td><%= link_to 'Show', animal %></td>
-        <td><%= link_to 'Edit', edit_animal_path(animal) %></td>
-        <td><%= link_to 'Destroy', animal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', animal %></td>
+        <td><%= link_to 'Editar', edit_animal_path(animal) %></td>
+        <td><%= link_to 'Deletar', animal, method: :delete, data: { confirm: 'Tem certeza que deseja deletar ?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +32,4 @@
 
 <br>
 
-<%= link_to 'New Animal', new_animal_path %>
+<%= link_to 'Adicionar animal', new_animal_path %>
