@@ -18,7 +18,7 @@
     <% @animals.each do |animal| %>
       <tr>
         <td><%= animal.nome %></td>
-        <td><%= animal.cliente %></td>
+        <td><%= animal.cliente.nome %></td>
         <td><%= animal.especie %></td>
         <td><%= animal.raca %></td>
         <td><%= animal.nascimento %></td>
