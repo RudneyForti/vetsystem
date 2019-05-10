@@ -1,0 +1,32 @@
+<%= form_with(model: atendimento, local: true) do |form| %>
+  <% if atendimento.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(atendimento.errors.count, "error") %> prohibited this atendimento from being saved:</h2>
+
+      <ul>
+      <% atendimento.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Animal_id %>
+    <%= form.text_field :Animal_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :observacao %>
+    <%= form.text_field :observacao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :data %>
+    <%= form.date_select :data %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

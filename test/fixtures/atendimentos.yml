@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Animal: one
+  observacao: MyString
+  data: 2019-05-10
+
+two:
+  Animal: two
+  observacao: MyString
+  data: 2019-05-10
