@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body{
     font-size:100%;
+     background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 1%,rgba(245,245,245,1) 100%); 
 }
 
 table{
@@ -26,7 +27,34 @@ th:last-child{
 th:first-child{
 	border-radius: 10px 0 0 0;
 }
+
+td{
+	font-size: 1.2em;
+	padding:18px 30px;
+			
+}
 		
+tr{
+	border-bottom:1px solid #d6d7d8
+}
+		
+table tr:last-child{
+	border-bottom:none;
+}
+		
+tr:hover{
+	background-color:#ccc;
+	transition: 1s;
+	cursor:pointer;
+}
+
+tr:last-child:hover td:first-child{
+	border-bottom-left-radius: 10px
+}
+
+tr:last-child:hover td:last-child{
+	border-bottom-right-radius: 10px
+}
 
 
 
