@@ -1,3 +1,4 @@
+
 <%= form_with(model: animal, local: true) do |form| %>
   <% if animal.errors.any? %>
     <div id="error_explanation">
@@ -18,7 +19,7 @@
 
   <div class="field">
     <%= form.label :cliente_id %>
-    <%= form.text_field :cliente_id %>
+    <%= form.select("cliente_id", Cliente.all.collect {|m| [ m.nome, m.id ] }, {include_blank:'Selecione...'})%>   
   </div>
 
   <div class="field">
