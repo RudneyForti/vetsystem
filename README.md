@@ -13,7 +13,7 @@ O Sistema terá:
 * Modo de Autenticação
 * Table Cliente
 * Table Animal
-* Table Status
+* Table Atendimento
 
 ### Estrutura Técnica
 
