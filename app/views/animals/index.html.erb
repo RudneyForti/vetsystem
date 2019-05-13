@@ -27,7 +27,7 @@
         <td><%= animal.cliente.nome %></td>
         <td><%= animal.especie %></td>
         <td><%= animal.raca %></td>
-        <td><%= animal.nascimento %></td>
+        <td><%= animal.nascimento.strftime("%d/%m/%Y") %></td>
         <td><%= link_to 'Mostrar', animal %></td>
         <td><%= link_to 'Editar', edit_animal_path(animal) %></td>
         <td><%= link_to 'Deletar', animal, method: :delete, data: { confirm: 'Tem certeza que deseja deletar ?' } %></td>
