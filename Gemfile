@@ -3,6 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.4.0'
 
+#Gema JQuery 
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+
 #Gema da Criptação de senha "Bcrypt"
 gem 'bcrypt', '~> 3.1', '>= 3.1.11'
 
