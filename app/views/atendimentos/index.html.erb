@@ -1,6 +1,13 @@
 <%= stylesheet_link_tag "clientes" %>
 <p id="notice"><%= notice %></p>
 
+ <nav>
+      <ul>
+        <li><%= link_to 'Clientes', clientes_path %></li>
+        <li><%= link_to 'Animais', animals_path %></li>
+        <li><%= link_to 'Atendimentos', atendimentos_path %></li>
+    </ul>
+  </nav>
 <h1>Atendimentos</h1>
 
 <table>
@@ -30,4 +37,4 @@
 
 <br>
 
-<%= link_to 'New Atendimento', new_atendimento_path %>
+<%= link_to 'Novo Atendimento', new_atendimento_path, class:"myButton" %>

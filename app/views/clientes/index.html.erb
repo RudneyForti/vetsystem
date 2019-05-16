@@ -1,7 +1,15 @@
 <%= stylesheet_link_tag "clientes" %>
+<%= javascript_include_tag "clientes" %>
 
 <p id="notice"><%= notice %></p>
-
+ <nav>
+      <ul>
+        <li><%= link_to 'Clientes', clientes_path %></li>
+        <li><%= link_to 'Animais', animals_path %></li>
+        <li><%= link_to 'Atendimentos', atendimentos_path %></li>
+    </ul>
+  </nav>
+  
 <h1>Clientes</h1>
 
 <table>
@@ -34,4 +42,4 @@
 </table>
 <br>
 
-<%= link_to 'New Cliente', new_cliente_path %>
+<%= link_to 'Novo Cliente', new_cliente_path, class: "myButton" %>

@@ -1,6 +1,13 @@
 <%= javascript_include_tag "clientes" %>
 <%= stylesheet_link_tag "clientes" %>
 <p id="notice"><%= notice %></p>
+ <nav>
+      <ul>
+        <li><%= link_to 'Clientes', clientes_path %></li>
+        <li><%= link_to 'Animais', animals_path %></li>
+        <li><%= link_to 'Atendimentos', atendimentos_path %></li>
+    </ul>
+</nav>
 
 <h1>Animais</h1>
 
@@ -38,4 +45,4 @@
 
 <br>
 
-<%= link_to 'Adicionar animal', new_animal_path %>
+<%= link_to 'Adicionar animal', new_animal_path, class: "myButton" %>
