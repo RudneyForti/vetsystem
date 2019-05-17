@@ -1,5 +1,6 @@
 <%= stylesheet_link_tag "clientes" %>
 <p id="notice"><%= notice %></p>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
  <nav>
       <ul>
@@ -8,6 +9,8 @@
         <li><%= link_to 'Atendimentos', atendimentos_path %></li>
     </ul>
   </nav>
+  
+<div id="alinha-content">
 <h1>Atendimentos</h1>
 
 <table>
@@ -24,12 +27,26 @@
   <tbody>
     <% @atendimentos.each do |atendimento| %>
       <tr>
+      
         <td><%= atendimento.Animal %></td>
         <td><%= atendimento.observacao %></td>
         <td><%= atendimento.data %></td>
-        <td><%= link_to 'Show', atendimento %></td>
-        <td><%= link_to 'Edit', edit_atendimento_path(atendimento) %></td>
-        <td><%= link_to 'Destroy', atendimento, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        
+        <td><%= link_to atendimento do%>
+           <i class="fas fa-eye"></i>
+           <%end%>
+        </td>
+        
+        <td><%= link_to edit_atendimento_path(atendimento) do %>
+          <i class="fas fa-edit">
+            </i>
+          <% end %>
+        </td>
+        
+        <td><%= link_to atendimento, method: :delete, data: { confirm: 'Are you sure?' } do %>
+          <i class="fas fa-trash-alt"></i>
+        <% end %>
+        </td>
       </tr>
     <% end %>
   </tbody>
@@ -38,3 +55,4 @@
 <br>
 
 <%= link_to 'Novo Atendimento', new_atendimento_path, class:"myButton" %>
+</div>
