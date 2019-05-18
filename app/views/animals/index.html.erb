@@ -1,8 +1,9 @@
-<%= javascript_include_tag "clientes" %>
 <%= stylesheet_link_tag "clientes" %>
+
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
 <p id="notice"><%= notice %></p>
+
  <nav>
       <ul>
         <li><%= link_to 'Clientes', clientes_path %></li>
@@ -31,8 +32,8 @@
       
       <% @animals.each do |animal| %>
          
-        <!--<tr data-link = "<%= link_to 'Mostrar', animal %>">-->
-        <tr>
+        
+        <tr data-link = '<%= link_to 'Mostrar', animal %>'>
          <td><%= animal.nome %></td>
           <td><%= animal.cliente.nome %></td>
           <td><%= animal.especie %></td>
@@ -56,6 +57,7 @@
   </table>
   
   <br>
+  
   
   <%= link_to 'Adicionar animal', new_animal_path, class: "myButton" %>
 </div>

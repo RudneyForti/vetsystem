@@ -13,7 +13,10 @@
 
  *= require_tree .
  *= require_self
+
  */
+
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, abbr, acronym, address, big, cite, code,
@@ -29,22 +32,23 @@ fieldset{
 }
 
 body{
-      background-image: linear-gradient( #f2f2f2,   #e6e6e6);
+
+    background-image: linear-gradient(  #ffffff, #f2f2f2);
 	background-repeat: no-repeat
 }
 
 h1{
-    color: #51a2d9;
+    color:  #0073e6;
     text-transform:uppercase;
     font-size:2em;
   	padding:20px 0;
 }
 
 nav{
-	width:250px;
-	background-color: #fff;
-	float:left;
+	width:230px;
+	background-color:  #e6e6e6;
 	height:655px;
+	float:left;
 }
 
 nav ul{
@@ -55,7 +59,6 @@ nav ul li{
 	list-style-type: none;
 	padding:7px;
 	margin-left:30px;
-	
 
 }
 
@@ -80,6 +83,8 @@ table{
 	border-radius:10px;
 	border-collapse: collapse;
 	text-align:left;
+	  box-shadow: 0 8px 8px #c1c1c1;
+
 	/*margin-left:300px;*/
 }
 		
@@ -87,8 +92,9 @@ th{
     text-transform:uppercase;
     color:white;
 	padding:18px 15px;
-	background-color:#36ce6c
+	background-color:#0cdb8c
 }
+
 
 /*td:nth-child(6){
 	padding-right: 0px;
@@ -118,7 +124,7 @@ table tr:last-child{
 }
 		
 tr:hover{
-	background-color:lightgray;
+	background-color: #f2f2f2;
 	transition: 1s;
 	cursor:pointer;
 }
@@ -136,9 +142,7 @@ i{
 	color: #595959;
 }
 
-i:hover{
-	background:none;
-}
+
 #alinha-content{
 	float:left;
 	margin-top:140px;
@@ -162,8 +166,8 @@ i:hover{
 	border-radius:5px;
 	border:1px solid #0cdb8c;
 	display:inline-block;
+	color:white;
 	cursor:pointer;
-	color:#ffffff;
 	font-family:Arial;
 	font-size:17px;
 	font-weight:bold;
@@ -171,6 +175,10 @@ i:hover{
 	text-decoration:none;
 	text-shadow:0px 1px 0px #0cdb8c;
 	float:left;
+}
+
+a.myButton{
+	color:white;
 }
 .myButton:hover {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0cdb8c), color-stop(1, #0cdb8c));
