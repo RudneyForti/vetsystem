@@ -137,4 +137,7 @@ a.myButton{
         margin: 65px 250px;
 }
 
-   
+a.aLogo{
+	padding: 0px !important;
+	padding-bottom: 10px !important;
+}
