@@ -28,7 +28,7 @@ class AtendimentosController < ApplicationController
 
     respond_to do |format|
       if @atendimento.save
-        format.html { redirect_to @atendimento, notice: 'Atendimento was successfully created.' }
+        format.html { redirect_to @atendimento, notice: 'Atendimento Criado.' }
         format.json { render :show, status: :created, location: @atendimento }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class AtendimentosController < ApplicationController
   def update
     respond_to do |format|
       if @atendimento.update(atendimento_params)
-        format.html { redirect_to @atendimento, notice: 'Atendimento was successfully updated.' }
+        format.html { redirect_to @atendimento, notice: 'Atendimento Atualizado.' }
         format.json { render :show, status: :ok, location: @atendimento }
       else
         format.html { render :edit }
@@ -56,7 +56,8 @@ class AtendimentosController < ApplicationController
   def destroy
     @atendimento.destroy
     respond_to do |format|
-      format.html { redirect_to atendimentos_url, notice: 'Atendimento was successfully destroyed.' }
+      
+      format.html { redirect_to atendimentos_url, notice: 'Atendimento Excluido.' }
       format.json { head :no_content }
     end
   end
