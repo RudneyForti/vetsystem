@@ -21,7 +21,7 @@
       <% @atendimentos.each do |atendimento| %>
         <tr>
         
-          <td><%= atendimento.Animal %></td>
+          <td><%= atendimento.Animal.nome %></td>
           <td><%= atendimento.observacao %></td>
           <td><%= atendimento.data %></td>
           
