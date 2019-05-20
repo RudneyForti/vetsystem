@@ -3,6 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.4.0'
 
+#Gema RSpec para Testes
+gem 'rspec', '~> 3.8'
+
 #Gema Javascript
 gem 'javascript', '~> 0.0.2'
 
