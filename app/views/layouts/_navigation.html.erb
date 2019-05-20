@@ -3,12 +3,13 @@
 <%= stylesheet_link_tag "clientes" %>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <div class="sidenav">
-  <%= image_tag("logo.png", :alt => "rss feed", class:"logo") %>
+  <%= link_to image_tag("logo.png", :alt => "rss feed", class:"logo"), (home_path), class:"aLogo" %>
+  
 <div>
-
   <%= link_to 'Clientes', clientes_path, class:"menu" %>
   <%= link_to 'Animais', animals_path, class:"menu" %>
   <%= link_to 'Atendimentos', atendimentos_path, class:"menu" %>
+  <%= link_to 'Sobre', about_path, class:"menu" %>
 </div>
 </div>
 
