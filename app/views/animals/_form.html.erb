@@ -19,7 +19,7 @@
 
   <div class="field">
     <%= form.label :cliente_id %>
-    <%= form.select("cliente_id", Cliente.all.collect {|m| [ m.nome, m.id ] }, {include_blank:'Selecione...'})%>   
+    <%= form.select("cliente_id", Cliente.all.collect {|m| [ m.nome, m.id ] }, {include_blank:'Selecione...'}, :class => 'myclass')%>   
   </div>
 
   <div class="field">
@@ -38,6 +38,6 @@
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit(:class => 'button') %>
   </div>
 <% end %>

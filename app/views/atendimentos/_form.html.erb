@@ -23,10 +23,10 @@
 
   <div class="field">
     <%= form.label :data %>
-    <%= form.date_select :data %>
+    <%= form.date_field :data %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit(:class => 'button') %>
   </div>
 <% end %>

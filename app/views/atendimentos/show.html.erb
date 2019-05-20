@@ -1,19 +1,21 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Animal:</strong>
-  <%= @atendimento.Animal %>
-</p>
-
-<p>
-  <strong>Observacao:</strong>
-  <%= @atendimento.observacao %>
-</p>
-
-<p>
-  <strong>Data:</strong>
-  <%= @atendimento.data %>
-</p>
-
-<%= link_to 'Edit', edit_atendimento_path(@atendimento) %> |
-<%= link_to 'Back', atendimentos_path %>
+<div id="mostrar">
+  <p id="notice"><%= notice %></p>
+  
+  <p>
+    <strong>Animal:</strong>
+    <%= @atendimento.Animal %>
+  </p>
+  
+  <p>
+    <strong>Observação:</strong>
+    <%= @atendimento.observacao %>
+  </p>
+  
+  <p>
+    <strong>Data:</strong>
+    <%= @atendimento.data %>
+  </p>
+  
+  <%= link_to 'Edit', edit_atendimento_path(@atendimento) %> |
+  <%= link_to 'Back', atendimentos_path %>
+</div>

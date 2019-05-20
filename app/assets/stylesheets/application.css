@@ -18,75 +18,19 @@
 
 
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset{
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-}
-
 body{
-
-    background-image: linear-gradient(  #ffffff, #f2f2f2);
-	background-repeat: no-repeat
+background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 1%,rgba(245,245,245,1) 100%); 
 }
-
-h1{
-    color:  #0073e6;
-    text-transform:uppercase;
-    font-size:2em;
-  	padding:20px 0;
-}
-
-nav{
-	width:230px;
-	background-color:  #e6e6e6;
-	height:655px;
-	float:left;
-}
-
-nav ul{
-	margin-top:200px;
-}
-
-nav ul li{
-	list-style-type: none;
-	padding:7px;
-	margin-left:30px;
-
-}
-
-nav ul li a{
-	font-size:1.2em;
-	text-decoration: none;
-	color: #3d444f;
-	
-} 
-
-nav ul li a:hover{
-	color:#073d7c;
-
-}
-
-nav ul li a:active{
-	background-color:purple;
-}
-
 table{
 	background-color:white;
-	border-radius:10px;
+	border-radius:8px;
 	border-collapse: collapse;
 	text-align:left;
 	  box-shadow: 0 8px 8px #c1c1c1;
 
 	/*margin-left:300px;*/
 }
+
 		
 th{
     text-transform:uppercase;
@@ -102,11 +46,11 @@ th{
 }*/
 
 th:last-child{
-	border-radius: 0 10px 0 0;
+	border-radius: 0 8px 0 0;
 }
 
 th:first-child{
-	border-radius: 10px 0 0 0;
+	border-radius: 8px 0 0 0;
 }
 
 td{
@@ -130,11 +74,11 @@ tr:hover{
 }
 
 tr:last-child:hover td:first-child{
-	border-bottom-left-radius: 10px
+	border-bottom-left-radius: 8px
 }
 
 tr:last-child:hover td:last-child{
-	border-bottom-right-radius: 10px
+	border-bottom-right-radius: 8px
 }
 
 i{
@@ -142,12 +86,6 @@ i{
 	color: #595959;
 }
 
-
-#alinha-content{
-	float:left;
-	margin-top:140px;
-	margin-left:65px;
-}
 
 .myButton {
 	-moz-box-shadow: 0px 4px 0px 0px #17b679;
@@ -195,3 +133,8 @@ a.myButton{
 	top:4px;
 }
 
+#novo, #mostrar{
+        margin: 65px 250px;
+}
+
+   
