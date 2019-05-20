@@ -10,10 +10,10 @@
       </ul>
     </div>
   <% end %>
-
+  
   <div class="field">
     <%= form.label :Animal_id %>
-    <%= form.text_field :Animal_id %>
+    <%= form.select("animal_id", Animal.all.collect {|m| [ m.nome, m.id ] }, {include_blank:'Selecione...'}, :class => 'myclass')%>   
   </div>
 
   <div class="field">
