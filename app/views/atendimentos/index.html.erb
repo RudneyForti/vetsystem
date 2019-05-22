@@ -21,7 +21,7 @@
         
           <td><%= atendimento.Animal.nome %></td>
           <td><%= atendimento.observacao %></td>
-          <td><%= atendimento.data %></td>
+          <td><%= atendimento.data.strftime("%d/%m/%Y") %></td>
           
           <td><%= link_to atendimento do%>
              <i class="fas fa-eye"></i>
