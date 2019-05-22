@@ -1,8 +1,15 @@
+<style>
+    .btn_back{
+        color: purple;
+        
+    }
+</style>
+
 <div id="novo">
     <h1>Editar Animal</h1>
     
     <%= render 'form', animal: @animal %>
     
-    <%= link_to 'Show', @animal %> |
-    <%= link_to 'Back', animals_path %>
+    <%= link_to 'Show', @animal, class:"btn_show" %> |
+    <%= link_to 'Back', animals_path, class:"btn_back" %>
 </div>
