@@ -1,8 +1,8 @@
 class Cliente < ApplicationRecord
     has_many :animal, dependent: :destroy
     
-    validates_presence_of :nome, message: 'Não pode ser deixado em branco'
-    validates_presence_of :email, message: 'Não pode ser deixado em branco'
+    validates_presence_of :nome, message: 'não pode ser deixado em branco'
+    validates_presence_of :email, message: 'não pode ser deixado em branco'
     validates_presence_of :telefone, message: 'não pode ser deixado em branco'
     
       

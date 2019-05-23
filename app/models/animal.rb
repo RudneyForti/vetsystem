@@ -4,6 +4,6 @@ class Animal < ApplicationRecord
   
   validates_presence_of :nome, message: 'não pode ser deixado em branco'
   validates_presence_of :especie, message: 'não pode ser deixado em branco'
-  validates_presence_of :raca, message: 'Não pode ser deixado em branco'
+  validates_presence_of :raca, message: 'não pode ser deixado em branco'
 
 end
