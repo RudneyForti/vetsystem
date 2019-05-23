@@ -9,6 +9,11 @@ Rails.application.routes.draw do
   get "/about" => "about#sobre"
   
   #get "/" => "home#inicio"
+  
+  get "/ideas" => "ideas#show" 
+  
+  root to: 'home#inicio'
+
 
 devise_for :users, :controllers => { registrations: 'users/registrations', sessions: "users/sessions", passwords: 'users/passwords' } do
     get "/", :to => "users/sessions#create"
