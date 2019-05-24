@@ -1,28 +1,42 @@
-<div class="main">
-<h2>Log in</h2>
-
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<%= stylesheet_link_tag "clientes" %>
+<div id="conteudo">
+  
+  <div id="formulario">
+    <h2>Login</h2>
+    
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="inputWithIcon inputIconBg">
+          <div class="field">
+            <%= f.label :email %><br/>
+            <%= f.email_field :email, autofocus: true, autocomplete: "email"%>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </div>
+        </div>
+      <div class="inputWithIcon inputIconBg">
+        <div class="field">
+          <%= f.label :password %><br />
+          <%= f.password_field :password, autocomplete: "current-password" %>
+          <i class="fas fa-lock" aria-hidden="true"></i>
+        </div>
+      </div>
+      <% if devise_mapping.rememberable? %>
+        <div class="field">
+          <%= f.check_box :remember_me %>
+          <%= f.label :remember_me %>
+        </div>
+      <% end %>
+    
+      <div class="actions">
+        <%= f.submit "Login"%>
+      </div>
+    <% end %>
+    
+    <%= render "devise/shared/links" %>
   </div>
-
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
-  </div>
-
-  <% if devise_mapping.rememberable? %>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
-    </div>
-  <% end %>
-
-  <div class="actions">
-    <%= f.submit "Log in" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+  
 </div>
+
+ <div id="banner">
+     <%= link_to image_tag("banner.jpg", :alt => "Foto de uma veterinária atendendo um cachorro.") %>             
+  </div>
