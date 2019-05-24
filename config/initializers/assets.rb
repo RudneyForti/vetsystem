@@ -16,4 +16,4 @@ Rails.application.config.assets.precompile += %w( clientes.css)
 Rails.application.config.assets.precompile += %w( clientes.js )
 Rails.application.config.assets.precompile += %w( atendimentos.js )
 Rails.application.config.assets.precompile += %w( animals.js )
-
+Rails.application.config.assets.precompile += %w( login.css )
