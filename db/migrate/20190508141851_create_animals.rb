@@ -6,6 +6,8 @@ class CreateAnimals < ActiveRecord::Migration[5.2]
       t.string :especie
       t.string :raca
       t.date :nascimento
+      
+      t.string :criador
 
       t.timestamps
     end

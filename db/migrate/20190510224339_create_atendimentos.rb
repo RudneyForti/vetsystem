@@ -4,6 +4,8 @@ class CreateAtendimentos < ActiveRecord::Migration[5.2]
       t.references :Animal, foreign_key: true
       t.string :observacao
       t.date :data
+      
+      t.string :criador
 
       t.timestamps
     end
