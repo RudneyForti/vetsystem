@@ -1,7 +1,14 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 <%= stylesheet_link_tag "clientes" %>
 <style>
-
+  .alert {
+    width:267px; 
+    background:  #ff8566;
+    padding:15px;
+    color:black;
+    border-radius:2px;
+  }
+  
 </style>
 
 <div id="conteudo">
@@ -28,7 +35,17 @@
           <i class="fas fa-lock" aria-hidden="true"></i>
         </div>
       </div>
-      
+     
+      <div class="sign_msg">
+           <% if notice %>
+            <p class="alert alert-success"><%= notice %></p>
+          <% end %>
+          
+          <% if alert %>
+            <p class="alert alert-danger"><%= alert %></p>
+          <% end %>
+      </div>
+    
       <% if devise_mapping.rememberable? %>
         <div class="field">
           <div class="check-content">
@@ -42,10 +59,13 @@
         <%= f.submit "Login", class: "btn btn-2 btn-2a" %>
       </div>
       <% end %>
-  
+    
       <%= render "devise/shared/links" %>
-   
+      <p id="notice"><%= notice %></p>
+    </div>
   </div>
+   <p id="notice"><%= notice %></p>
+    </div>
 
    <div id="banner">
      <%= link_to image_tag("banner.jpg", :alt => "Foto de uma veterinária atendendo um cachorro.") %>             
