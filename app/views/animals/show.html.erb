@@ -1,32 +1,59 @@
 <%= render 'layouts/navigation' %>
-<div id="mostrar">
-  <p id="notice"><%= notice %></p>
+
+<style>
+  .alinha-show{
+    padding-bottom:10px;
+    
+  }
   
-  <p>
-    <strong>Nome:</strong>
-    <%= @animal.nome %>
-  </p>
+  .alinha-show strong{
+    color:#00995c;
+  }
   
-  <p>
-    <strong>Cliente:</strong>
-    <%= @animal.cliente.nome %>
-  </p>
   
-  <p>
-    <strong>Espécie:</strong>
-    <%= @animal.especie %>
-  </p>
-  
-  <p>
-    <strong>Raça:</strong>
-    <%= @animal.raca %>
-  </p>
-  
-  <p>
-    <strong>Nascimento:</strong>
-    <%= @animal.nascimento %>
-  </p>
-  
-  <%= link_to 'Editar', edit_animal_path(@animal) %> |
-  <%= link_to 'Voltar', animals_path %>
+</style>
+
+<div class="container-show">
+  <div id="mostrar">
+    <p id="notice"><%= notice %></p>
+    <h1>Ficha do Animal</h1>
+    
+    <div class="alinha-show">
+      <p>
+        <strong>Nome:</strong>
+        <%= @animal.nome %>
+      </p>
+    </div>
+    
+    <div class="alinha-show">
+      <p>
+        <strong>Cliente:</strong>
+        <%= @animal.cliente.nome %>
+      </p>
+    </div>
+    
+    <div class="alinha-show">
+      <p>
+        <strong>Espécie:</strong>
+        <%= @animal.especie %>
+      </p>
+    </div>
+    
+    <div class="alinha-show">
+      <p>
+        <strong>Raça:</strong>
+        <%= @animal.raca %>
+      </p>
+    </div>
+    
+    <div class="alinha-show">
+      <p>
+        <strong>Nascimento:</strong>
+        <%= @animal.nascimento %>
+      </p>
+    </div>
+    
+    <%= link_to 'Editar', edit_animal_path(@animal) %> |
+    <%= link_to 'Voltar', animals_path %>
+  </div>
 </div>
