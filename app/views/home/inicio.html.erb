@@ -1,7 +1,8 @@
 <%= render 'layouts/navigation' %>
 <div class="main">
     <div id="alinha-content">
-        <h1>Seja Bem Vindo, <%= current_user.username %> !</h1>
+        <h1>Olá, <%= current_user.username %>!</h1>
+        <br>
         <div class="count">
             <%= link_to image_tag("mini-user.png", :alt => "icone cliente", class:"alinha-count-img") %>
                 <div class="alinha-count">
