@@ -129,10 +129,11 @@ input:focus {
     
   }
   
-  #banner img{
+  #banner{
     float:left;
     width:70%;
-  }  
+    height:100%;
+}
   
   #formulario form{
     margin-left:50px;
@@ -150,7 +151,7 @@ input:focus {
   }
  
   #formulario{
-    width:30%;
+    width:29.9%;
     height: 100%;
     float:left;
     background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 1%,rgba(245,245,245,1) 100%); 
