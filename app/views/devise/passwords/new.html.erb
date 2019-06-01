@@ -1,17 +1,25 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
-<h2>Forgot your password?</h2>
+<%= stylesheet_link_tag "clientes" %>
+ <%= link_to image_tag("logo-2.png", :alt => "logo", class:"logo2") %>
+<h2 class="h2_alinhamento">Esqueceu <br><br>sua senha?</h2>
 
+<div id="formulario">
 <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  <div class="inputWithIcon inputIconBg">
+    <div class="field">
+      <%= f.label :email %><br />
+      <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+      <i class="fa fa-envelope" aria-hidden="true"></i>
+    </div>
   </div>
 
   <div class="actions">
-    <%= f.submit "Send me reset password instructions" %>
+    <%= f.submit "Instruções de senha",class: "btn btn-2 btn-2a" %>
   </div>
 <% end %>
 
 <%= render "devise/shared/links" %>
+</div>
