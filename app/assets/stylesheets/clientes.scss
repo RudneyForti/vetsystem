@@ -319,7 +319,7 @@ a{
   padding:10px;
   margin: 8px 0 0px 0px;
   background:#0cdb8c;
-	border: 3px solid #fff;
+	border: 1.5px solid #fff;
 	color: #fff !important;
 	font-size:15px;
 
@@ -330,4 +330,17 @@ a{
 .btn-1a:active {
 	color: #0e83cd;
 	background: #17b679;
+}
+
+
+#login_user{
+text-align:center;
+color:white;
+}
+
+#login_user .btn{
+	background:   #404040!important;
+	color:white !important;
+	border:none;
+	margin: 0px;
 }
