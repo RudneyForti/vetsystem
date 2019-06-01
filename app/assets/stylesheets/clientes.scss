@@ -73,7 +73,7 @@ h1{
 
   
   .field label{
-    color: #00b33c;
+    color: #17b679;
     margin-bottom:8px;
     font-size:20px;
   }
@@ -102,8 +102,8 @@ h1{
 
 
 input:focus {
-  border-color: #36ce6c;
-  box-shadow: 0 0 4px 0 #36ce6c;
+  border-color: #17b679;
+  box-shadow: 0 0 4px 0 #17b679;
 }
 
 
@@ -137,6 +137,7 @@ input:focus {
   
   #formulario form{
     margin-left:50px;
+   
   }
   
   #formulario input{
@@ -145,19 +146,38 @@ input:focus {
     padding:0;
     background: #f2f2f2;
 }
+
+#formulario .check{
+  width:15px;
+ margin-left:8px;
+}
   
-  #formulario label{
+#formulario .check-content{
+  width:350px;
+
+}
+#formulario .check:focus {
+  box-shadow: none;
+}
+
+#formulario .check_label{
+  float:left;
+  margin-top:8px;
+}
+
+
+#formulario label{
      margin-bottom:0
-  }
+}
  
-  #formulario{
-    width:29.9%;
-    height: 100%;
-    float:left;
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 1%,rgba(245,245,245,1) 100%); 
-  }
+#formulario{
+  width:29.9%;
+  height: 100%;
+  float:left;
+
+}
   
-  #formulario .inputWithIcon input{
+#formulario .inputWithIcon input{
     padding-left: 40px;
   }
 
@@ -190,11 +210,88 @@ input:focus {
 h2{
   text-align:center;
   margin:40px;
-  font-size:1.5em;
+  font-size:1.8em;
   text-transform:uppercase;
-  color: gray;
+  color:  #17b679;
+}
+
+.alinha-conteudo-edit{
+  margin-left:100px;
+}
+
+a{
+  text-decoration:none;
+}
+h2_alinhamento{
+  text-align:left;
+  margin-left:100px;
+}
+
+.msg_i{
+  font-size:15px;
 }
 
 
+  a:hover{
+    background:none;
+  }
+  
+.logo2{
+  margin-left:110px;
+}
 
- 
+
+.btn {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 25px 80px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+
+}
+
+.btn-2 {
+	background: #0cdb8c !important;
+	color: #fff;
+	box-shadow: 0 6px #17b679;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+
+}
+
+.btn-2a {
+	border-radius: 0 0 5px 5px;
+}
+
+.btn-2a:hover {
+	box-shadow: 0 4px #17b679;
+	top: 2px;
+}
+
+.btn-2a:active {
+	box-shadow: 0 0 #17b679;
+	top: 6px;
+}
+
+.alinha-links-devise{
+  color:blue;
+  margin-left:50px;
+ margin-top:20px;
+ text-decoration:underline;
+}
+.alinha-links-devise:hover{
+  color:darkblue;
+}
