@@ -1,6 +1,32 @@
 <%= render 'layouts/navigation' %>
 <div class="main">
-<div id="alinha-content">
-    <h1>Seja Bem Vindo, <%= current_user.username %> !</h1>
+    <div id="alinha-content">
+        <h1>Seja Bem Vindo, <%= current_user.username %> !</h1>
+        <div class="count">
+            <%= link_to image_tag("mini-user.png", :alt => "icone cliente", class:"alinha-count-img") %>
+                <div class="alinha-count">
+                    Atualmente há
+                        <strong><%= Cliente.count %></strong>
+                    clientes cadastrados.
+                </div>
+        </div>
+        
+        <div class="count">
+            <%= link_to image_tag("mini-animal.png", :alt => "icone cliente", class:"alinha-count-img") %>
+                <div class="alinha-count">
+                    Atualmente há
+                        <strong><%= Animal.count %></strong>
+                    animais cadastrados.
+                </div>
+        </div>
+        
+        <div class="count">
+            <%= link_to image_tag("mini-atendimento.png", :alt => "icone cliente", class:"alinha-count-img") %>
+                <div class="alinha-count">
+                    Atualmente há
+                        <strong><%= Atendimento.count %></strong>
+                    atendimentos cadastrados.
+                </div>
+        </div>
 </div>
 </div>
