@@ -1,59 +1,48 @@
 <%= render 'layouts/navigation' %>
 
-<style>
-  .alinha-show{
-    padding-bottom:10px;
-    
-  }
-  
-  .alinha-show strong{
-    color:#00995c;
-  }
-  
-  
-</style>
-
 <div class="container-show">
   <div id="mostrar">
-    <p id="notice"><%= notice %></p>
-    <h1>Ficha do Animal</h1>
+    <h1>Informações do Animal</h1>
     
-    <div class="alinha-show">
-      <p>
-        <strong>Nome:</strong>
-        <%= @animal.nome %>
-      </p>
+    <div class="inf">
+        <%= link_to image_tag("perfil-animal.png", :alt => "logo", class:"cliente-photo") %> 
+      <div class="alinha-show">
+        <p>
+          <strong>Nome:</strong>
+          <%= @animal.nome %>
+        </p>
+      </div>
+      
+      <div class="alinha-show">
+        <p>
+          <strong>Cliente:</strong>
+          <%= @animal.cliente.nome %>
+        </p>
+      </div>
+      
+      <div class="alinha-show">
+        <p>
+          <strong>Espécie:</strong>
+          <%= @animal.especie %>
+        </p>
+      </div>
+      
+      <div class="alinha-show">
+        <p>
+          <strong>Raça:</strong>
+          <%= @animal.raca %>
+        </p>
+      </div>
+      
+      <div class="alinha-show">
+        <p>
+          <strong>Nascimento:</strong>
+          <%= @animal.nascimento %>
+        </p>
+      </div>
+      
+      <%= link_to 'Editar', edit_animal_path(@animal), class: "btn btn-1 btn-1a" %>
+      <%= link_to 'Voltar', animals_path, class: "btn btn-1 btn-1a" %>
     </div>
-    
-    <div class="alinha-show">
-      <p>
-        <strong>Cliente:</strong>
-        <%= @animal.cliente.nome %>
-      </p>
-    </div>
-    
-    <div class="alinha-show">
-      <p>
-        <strong>Espécie:</strong>
-        <%= @animal.especie %>
-      </p>
-    </div>
-    
-    <div class="alinha-show">
-      <p>
-        <strong>Raça:</strong>
-        <%= @animal.raca %>
-      </p>
-    </div>
-    
-    <div class="alinha-show">
-      <p>
-        <strong>Nascimento:</strong>
-        <%= @animal.nascimento %>
-      </p>
-    </div>
-    
-    <%= link_to 'Editar', edit_animal_path(@animal) %> |
-    <%= link_to 'Voltar', animals_path %>
   </div>
 </div>

@@ -1,32 +1,49 @@
 <%= render 'layouts/navigation' %>
 <div id="mostrar">
-  <p id="notice"><%= notice %></p>
   
-  <p>
-    <strong>Nome:</strong>
-    <%= @cliente.nome %>
-  </p>
   
-  <p>
-    <strong>Cpf:</strong>
-    <%= @cliente.cpf %>
-  </p>
-  
-  <p>
-    <strong>Endereco:</strong>
-    <%= @cliente.endereco %>
-  </p>
-  
-  <p>
-    <strong>Telefone:</strong>
-    <%= @cliente.telefone %>
-  </p>
-  
-  <p>
-    <strong>Email:</strong>
-    <%= @cliente.email %>
-  </p>
-  
-  <%= link_to 'Editar', edit_cliente_path(@cliente) %> |
-  <%= link_to 'Voltar', clientes_path %>
+    <h1>Informações do cliente</h1> 
+   <div class="inf">
+    <%= link_to image_tag("client-perfil.png", :alt => "logo", class:"cliente-photo") %> 
+    
+    <div class="alinha-content">
+      <div class="alinha-show">
+        <p>
+          <strong>Nome:</strong>
+          <%= @cliente.nome %>
+        </p>
+     </div>
+     
+      <div class="alinha-show">
+        <p>
+          <strong>Cpf:</strong>
+          <%= @cliente.cpf %>
+        </p>
+      </div>
+      
+      <div class="alinha-show">
+        <p>
+          <strong>Endereco:</strong>
+          <%= @cliente.endereco %>
+        </p>
+      </div>
+      
+      <div class="alinha-show">
+        <p>
+          <strong>Telefone:</strong>
+          <%= @cliente.telefone %>
+        </p>
+      </div>
+      
+      <div class="alinha-show">
+        <p>
+          <strong>Email:</strong>
+          <%= @cliente.email %>
+        </p>
+      </div>
+      
+      <%= link_to 'Editar', edit_cliente_path(@cliente), class: "btn btn-1 btn-1a" %>
+      <%= link_to 'Voltar', clientes_path, class: "btn btn-1 btn-1a" %>
+      
+  </div>
 </div>

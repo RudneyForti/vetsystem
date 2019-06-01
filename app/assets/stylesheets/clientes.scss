@@ -262,7 +262,7 @@ a{
 
 .btn-2 {
 	background: #0cdb8c !important;
-	color: #fff;
+	color: #fff ;
 	box-shadow: 0 6px #17b679;
 	-webkit-transition: none;
 	-moz-transition: none;
@@ -285,11 +285,49 @@ a{
 }
 
 .alinha-links-devise{
-  color:blue;
+  color:blue !important;
   margin-left:50px;
  margin-top:20px;
  text-decoration:underline;
 }
+
 .alinha-links-devise:hover{
   color:darkblue;
+}
+
+.cliente-photo{
+  float:left;
+  margin-right:20px;
+}
+
+.inf{
+  float:left;
+  width:100%;
+}
+
+ .alinha-show{
+    padding-bottom:10px;
+    font-size:18px;
+    
+  }
+  
+  .alinha-show strong{
+    color:#00995c;
+  }
+ 
+ .btn-1 {
+  padding:10px;
+  margin: 8px 0 0px 0px;
+  background:#0cdb8c;
+	border: 3px solid #fff;
+	color: #fff !important;
+	font-size:15px;
+
+}
+
+/* Button 1a */
+.btn-1a:hover,
+.btn-1a:active {
+	color: #0e83cd;
+	background: #17b679;
 }

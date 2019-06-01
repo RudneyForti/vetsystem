@@ -1,22 +1,37 @@
 <%= render 'layouts/navigation' %>
-<div id="mostrar">
-  <p id="notice"><%= notice %></p>
-  
-  <p>
-    <strong>Animal:</strong>
-    <%= @atendimento.Animal.nome %>
-  </p>
-  
-  <p>
-    <strong>Observação:</strong>
-    <%= @atendimento.observacao %>
-  </p>
-  
-  <p>
-    <strong>Data:</strong>
-    <%= @atendimento.data %>
-  </p>
-  
-  <%= link_to 'Editar', edit_atendimento_path(@atendimento) %> |
-  <%= link_to 'Voltar', atendimentos_path %>
+
+
+<div class="container-show">
+  <div id="mostrar">
+     <h1>Atendimento do Animal</h1>
+    <p id="notice"><%= notice %></p>
+    
+    <div class="inf">
+      <%= link_to image_tag("perfil-atendimento.png", :alt => "logo", class:"cliente-photo") %> 
+    
+      <div class="alinha-show">
+        <p>
+          <strong>Animal:</strong>
+          <%= @atendimento.Animal.nome %>
+        </p>
+      </div>
+      
+      <div class="alinha-show">
+        <p>
+          <strong>Observação:</strong>
+          <%= @atendimento.observacao %>
+        </p>
+      </div>
+      
+      <div class="alinha-show">
+        <p>
+          <strong>Data:</strong>
+          <%= @atendimento.data %>
+        </p>
+      </div>
+      
+        <%= link_to 'Editar', edit_atendimento_path(@atendimento), class: "btn btn-1 btn-1a" %>
+        <%= link_to 'Voltar', atendimentos_path, class: "btn btn-1 btn-1a" %>
+       </div>
+    </div>
 </div>
