@@ -3,14 +3,18 @@
 <div id="conteudo">
 
   <div id="formulario">
-  <h2>Sign up</h2>
+    <%= link_to image_tag("logo-2.png", :alt => "logo", class:"logo2") %>
+  <h2 class="h2_alinhamento">Cadastro</h2>
   
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
     <%= render "devise/shared/error_messages", resource: resource %>
     
-    <div class=”field”>
-         <%= f.label :username %><br />
-         <%= f.text_field :username, autofocus: true %>
+    <div class="inputWithIcon inputIconBg">
+      <div class=”field”>
+           <%= f.label :username %><br />
+           <%= f.text_field :username, autofocus: true, autocomplete: "username", class:"user" %>
+           <i class="fas fa-user" aria-hidden="true"></i>
+      </div>
     </div>
   
     <div class="inputWithIcon inputIconBg">
@@ -41,7 +45,7 @@
     </div>
   
     <div class="actions">
-      <%= f.submit "Sign up" %>
+      <%= f.submit "Cadastrar", class: "btn btn-2 btn-2a" %>
     </div>
   <% end %>
   
