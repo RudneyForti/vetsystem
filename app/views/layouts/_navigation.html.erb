@@ -10,7 +10,7 @@
   
       <p class="navbar-text pull-right">
         <% if user_signed_in? %>
-          <div id= "login_user">Logado como: <strong><%= current_user.email %></strong>.
+          <div id= "login_user">Logado como: <strong><%= current_user.username %></strong>.
           <%= link_to 'Editar perfil', edit_user_registration_path, :class => 'navbar-link', class:"btn btn-1 btn-1a" %>
           <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link', class:"btn btn-1 btn-1a" %></div>
         <% else %>
@@ -21,16 +21,17 @@
     
   </div>
   
-<div class="sidenav">
-  <%= link_to image_tag("logo.png", :alt => "rss feed", class:"logo"), (home_path), class:"aLogo" %>
-  
-<div>
-  <%= link_to 'Clientes', clientes_path, class:"menu" %>
-  <%= link_to 'Animais', animals_path, class:"menu" %>
-  <%= link_to 'Atendimentos', atendimentos_path, class:"menu" %>
-  <%= link_to 'Sobre', about_path, class:"menu" %>
-</div>
-</div>
+  <div class="sidenav">
+    <%= link_to image_tag("logo.png", :alt => "rss feed", class:"logo"), (home_path), class:"aLogo" %>
+    
+    <div>
+      <%= link_to 'Clientes', clientes_path, class:"menu" %>
+      <%= link_to 'Animais', animals_path, class:"menu" %>
+      <%= link_to 'Atendimentos', atendimentos_path, class:"menu" %>
+      <%= link_to 'Sobre', about_path, class:"menu" %>
+    </div>
+    
+  </div>
 
 <div class="main">
   
