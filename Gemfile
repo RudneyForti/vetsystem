@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.4.0'
 
+gem 'kaminari'
 #Gema RSpec para Testes
 gem 'rspec', '~> 3.8'
 
