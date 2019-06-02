@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2019_05_29_181748) do
     t.string "especie"
     t.string "raca"
     t.date "nascimento"
+    t.string "criador"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["cliente_id"], name: "index_animals_on_cliente_id"
@@ -27,6 +28,7 @@ ActiveRecord::Schema.define(version: 2019_05_29_181748) do
     t.integer "Animal_id"
     t.string "observacao"
     t.date "data"
+    t.string "criador"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["Animal_id"], name: "index_atendimentos_on_Animal_id"
@@ -38,6 +40,7 @@ ActiveRecord::Schema.define(version: 2019_05_29_181748) do
     t.string "endereco"
     t.string "telefone"
     t.string "email"
+    t.string "criador"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
