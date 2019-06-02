@@ -29,7 +29,7 @@
       <div class="field">
         <%= f.label :password %>
         <% if @minimum_password_length %>
-        <em>(<%= @minimum_password_length %> characters minimum)</em>
+        <em>A senha deve ter no mínimo <%= @minimum_password_length %> caracteres</em>
         <% end %><br />
         <%= f.password_field :password, autocomplete: "new-password" %>
         <i class="fas fa-lock" aria-hidden="true"></i>
