@@ -15,7 +15,7 @@
             <i class="fas fa-user-md" aria-hidden="true"></i>
           </div>
       </div>
-      
+       <br>
       <div class="field">
         <%= f.label :email %><br />
         <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
@@ -50,9 +50,12 @@
     <% end %>
     
     <h3>Área de Risco</h3>
+    <br>
     
-    <p>Você está infeliz? <%= button_to "Apague sua conta", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
-    
+    <p>Você está infeliz?</p>
+    <br>
+    <%= button_to "Apague sua conta", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %>
+     <br>
     <%= link_to "Voltar", :back,class:"btn btn-1 btn-1a" %>
   </div>
 </div>
