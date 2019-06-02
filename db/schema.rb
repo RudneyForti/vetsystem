@@ -25,13 +25,13 @@ ActiveRecord::Schema.define(version: 2019_05_29_181748) do
   end
 
   create_table "atendimentos", force: :cascade do |t|
-    t.integer "Animal_id"
+    t.integer "animal_id"
     t.string "observacao"
     t.date "data"
     t.string "criador"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["Animal_id"], name: "index_atendimentos_on_Animal_id"
+    t.index ["animal_id"], name: "index_atendimentos_on_animal_id"
   end
 
   create_table "clientes", force: :cascade do |t|
