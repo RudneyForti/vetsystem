@@ -10,10 +10,22 @@
   
       <p class="navbar-text pull-right">
         <% if user_signed_in? %>
+<<<<<<< HEAD
+        
+          <div id= "login_user" style="position: relative; top: 5px; left: -10%" >Logado como: <strong><%= current_user.username %></strong>.
+          
+          <div style="position: relative; float: right; top: -10px;">
+            <%= link_to 'Editar perfil', edit_user_registration_path, :class => 'navbar-link', class:"btn btn-1 btn-1a" %>
+            <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link', class:"btn btn-1 btn-1a" %></div>
+          </div>
+          
+          <% else %>
+=======
           <div id= "login_user">Logado como: <strong><%= current_user.username %></strong>.
           <%= link_to 'Editar perfil', edit_user_registration_path, :class => 'navbar-link', class:"btn btn-1 FF" %>
           <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link', class:"btn btn-1 btn-1a" %></div>
         <% else %>
+>>>>>>> 74907041fbdb9247a7ab88f2c01edb14adf10558
       
           <%= link_to "Registrar-se", new_user_registration_path, :class => 'navbar-link'  %> |
           <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
