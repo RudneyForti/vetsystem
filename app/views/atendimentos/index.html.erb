@@ -46,5 +46,9 @@
   <br>
   
   <%= link_to 'Novo Atendimento', new_atendimento_path, class:"myButton" %>
+  
+     <div class="paginacao">
+        <%= paginate @atendimentos, class: "pagination" %>
+      </div>
   </div>
 </div>

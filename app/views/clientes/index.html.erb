@@ -54,5 +54,11 @@
     </table>
     <br>
     <%= link_to 'Novo Cliente', new_cliente_path, class: "myButton" %>
+    
+    
+      <div class="paginacao">
+        <%= paginate @clientes, class: "pagination" %>
+      </div>
+      
   </div>
 </div>
