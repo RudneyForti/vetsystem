@@ -4,7 +4,7 @@ class AtendimentosController < ApplicationController
   # GET /atendimentos
   # GET /atendimentos.json
   def index
-    @atendimentos = Atendimento.all
+    @atendimentos = Atendimento.all.page(params[:page]).per(4)
   end
 
   # GET /atendimentos/1

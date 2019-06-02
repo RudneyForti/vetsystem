@@ -49,9 +49,14 @@
     
 
     <br>
-  
+    
     
     <%= link_to 'Adicionar Animal', new_animal_path, class: "myButton" %>
+    
+      <div class="paginacao">
+        <%= paginate @animals, class: "pagination" %>
+      </div>
+      
     </div>
 </div>
 
