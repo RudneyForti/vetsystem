@@ -230,12 +230,18 @@ a{
 }
 
 
- /* a:hover{
+ a:hover{
     background:none;
-  }*/
+  }
   
 .paginacao{
   margin-top:70px;
+  color:blue !important;
+  
+}
+
+.paginacao a{
+  color:blue !important;
 }
 .logo2{
   margin-left:110px;
