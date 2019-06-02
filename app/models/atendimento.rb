@@ -1,3 +1,3 @@
 class Atendimento < ApplicationRecord
-  belongs_to :Animal
+  belongs_to :animal
 end

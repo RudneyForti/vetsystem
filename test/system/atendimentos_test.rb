@@ -14,7 +14,7 @@ class AtendimentosTest < ApplicationSystemTestCase
     visit atendimentos_url
     click_on "New Atendimento"
 
-    fill_in "Animal", with: @atendimento.Animal_id
+    fill_in "Animal", with: @atendimento.animal_id
     fill_in "Data", with: @atendimento.data
     fill_in "Observacao", with: @atendimento.observacao
     click_on "Create Atendimento"
@@ -27,7 +27,7 @@ class AtendimentosTest < ApplicationSystemTestCase
     visit atendimentos_url
     click_on "Edit", match: :first
 
-    fill_in "Animal", with: @atendimento.Animal_id
+    fill_in "Animal", with: @atendimento.animal_id
     fill_in "Data", with: @atendimento.data
     fill_in "Observacao", with: @atendimento.observacao
     click_on "Update Atendimento"

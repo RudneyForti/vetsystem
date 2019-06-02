@@ -17,7 +17,7 @@ class AtendimentosControllerTest < ActionDispatch::IntegrationTest
 
   test "should create atendimento" do
     assert_difference('Atendimento.count') do
-      post atendimentos_url, params: { atendimento: { Animal_id: @atendimento.Animal_id, data: @atendimento.data, observacao: @atendimento.observacao } }
+      post atendimentos_url, params: { atendimento: { animal_id: @atendimento.animal_id, data: @atendimento.data, observacao: @atendimento.observacao } }
     end
 
     assert_redirected_to atendimento_url(Atendimento.last)
@@ -34,7 +34,7 @@ class AtendimentosControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update atendimento" do
-    patch atendimento_url(@atendimento), params: { atendimento: { Animal_id: @atendimento.Animal_id, data: @atendimento.data, observacao: @atendimento.observacao } }
+    patch atendimento_url(@atendimento), params: { atendimento: { animal_id: @atendimento.animal_id, data: @atendimento.data, observacao: @atendimento.observacao } }
     assert_redirected_to atendimento_url(@atendimento)
   end
 
