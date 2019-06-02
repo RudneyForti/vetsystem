@@ -236,12 +236,12 @@ a{
   
 .paginacao{
   margin-top:70px;
-  color:blue !important;
+ 
   
 }
 
 .paginacao a{
-  color:blue !important;
+  color:darkblue !important;
 }
 .logo2{
   margin-left:110px;
@@ -373,3 +373,16 @@ color:white;
 .alinha-count-img{
   float:left;
 }
+
+.current a{
+  color:purple !important;
+}
+.current, span{
+  background: #d9d9d9;
+  margin-right:1px;
+  border-radius:5px;
+  font-weight:bold;
+  padding:5px;
+  border:1px solid white;
+}
+
