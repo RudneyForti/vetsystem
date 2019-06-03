@@ -1,0 +1,5 @@
+heroku pg:reset
+heroku run rake db:migrate
+heroku restart
+
+https://git.heroku.com/polar-reef-44004.git
